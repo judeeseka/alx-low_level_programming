@@ -11,7 +11,7 @@ int _strlen(char *s)
 {
 	int len;
 
-	for (len = 0; s[len] != '\0'; len++)
+	for (len = 0; s[len]; len++)
 		;
 
 	return (len);
@@ -27,7 +27,7 @@ int _strlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, m = 0, k;
+	unsigned int i, j = 1, m = 0, k;
 	char *p;
 
 	if (s1 != NULL)
