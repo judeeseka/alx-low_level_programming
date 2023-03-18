@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			m++;
 		}
 	}
-	if (s2 != NULL && (n < k))
+	if ((s2 != NULL) && (n < k))
 	{
 		for (i = 0; i < n; i++)
 		{
